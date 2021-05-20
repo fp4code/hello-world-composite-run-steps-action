@@ -14,7 +14,7 @@ runs:
   steps:
     - run: echo Hello ${{ inputs.who_to_greet }}.
       shell: bash
-    - run: echo "ReHello ${INPUTS_WHO_TO_GREET}".
+    - run: echo "ReHello ${INPUT_WHO_TO_GREET}".
       shell: bash
     - id: random-number-generator
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
